@@ -1,3 +1,4 @@
+
 body{
 
 font-style: italic;
@@ -9,8 +10,8 @@ margin-top: 0%;
 }
 
 header{
-  width: 100%;
-  background-color: #5b7989;
+    width: 99%;
+    background-color: #5b7989;
     color: white;
     border-top-right-radius:10px;
     border-top-left-radius: 10px;
@@ -49,6 +50,33 @@ section .contenedor1{
   background-color: #82c3a6;
   text-align: center;
 }
+@keyframes imagen2-animacion {
+	from {
+		transform: rotate(0deg);
+    border-right: 2px solid;
+    border-top: 2px solid;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(130,195,166,0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(130,195,166,0);
+    box-shadow: 0px 0px 0px 0px rgba(130,195,166,0);
+	}
+	to {
+		transform: rotate(10deg);
+    border-right: 2px solid;
+    border-top: 2px solid;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(130,195,166,0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(130,195,166,0);
+    box-shadow: 0px 0px 0px 0px rgba(130,195,166,0);
+	}
+}
+#imagen2 img:hover{
+  animation-name: imagen2-animacion;
+  animation-duration: 2s;
+
+}
+#imagen2 img{
+  text-shadow: #82c3a6;
+
+}
 .imagen1{
   width: 60%;
 }
@@ -62,9 +90,43 @@ section .contenedor2 > div{
   text-align: center;
   padding: 10px;
   margin: 10px;
+}
+@keyframes imagen3-animacion {
+  from {
+    transform: translate(0px,0px);
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(130,195,166,0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(130,195,166,0);
+    box-shadow: 0px 0px 0px 0px rgba(130,195,166,0);
+  }
+  to {
+    transform: translate(20px,-5px);
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(130,195,166,0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(130,195,166,0);
+    box-shadow: 0px 0px 0px 0px rgba(130,195,166,0);
+
+  }
+}
+#imagen3 img:hover{
+  animation-name: imagen3-animacion;
+  animation-duration: 2s;
+}
+#imagen3 img{
+  text-shadow: #82c3a6;
 
 }
-
-.imagen2{
-
+footer section{
+  display: flex;
+	flex-direction: row;
+  background-color:  #C6d5c5;
+  border:1px solid;
+}
+footer section div{
+  padding-left: 2%;
+  width: 25%;
+  border-radius: 10px;
+  text-align: left;
 }
