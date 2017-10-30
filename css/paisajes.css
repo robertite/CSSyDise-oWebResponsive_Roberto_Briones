@@ -203,3 +203,18 @@ section .contenedor2 > div{
 #imagen3 img{
   text-shadow: #82c3a6;
 }
+body{
+  animation-name: slidein;
+  animation-duration: 1s;
+}
+@keyframes slidein {
+  100% {
+  transform: translateY(0%);
+  }
+  60%{
+    transform: translateY(-5%);
+  }
+  0%{
+transform: translateY(150%);
+  }
+}
